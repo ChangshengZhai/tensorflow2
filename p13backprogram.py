@@ -10,4 +10,4 @@ for epoch in range(epoch):
 
     w.assign_sub(lr * grads)  #.assign_sub 对变量做自减 即：w -= lr * grads
     print("After %s epoch, w is %f, loss is %f"%(epoch, w.numpy(),loss))
-
+    
